@@ -71,7 +71,7 @@ class _TimerTextState extends State<TimerText> {
       _timerText.value =
           "${Utils.showZero(hours)}$hours:${Utils.showZero(minutes)}$minutes:${Utils.showZero(seconds)}$seconds ${timeIsDone ? "overtime" : "left"}";
 
-      if (seconds == 0) {
+      if (secondsLeft == 0) {
         timeIsDone = true;
       }
 
