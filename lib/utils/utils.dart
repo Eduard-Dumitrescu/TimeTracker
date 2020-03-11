@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class Utils {
-
   static double deviceWidth(BuildContext context) {
     final double deviceWidth = MediaQuery.of(context).size.width;
     return deviceWidth;
@@ -16,6 +15,10 @@ class Utils {
     final double deviceHeight =
         MediaQuery.of(context).size.height - kToolbarHeight;
     return deviceHeight;
+  }
+
+  static String showZero(int value) {
+    return value < 10 ? "0" : "";
   }
 
   static String getDayName(int day) {
